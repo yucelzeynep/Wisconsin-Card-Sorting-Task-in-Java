@@ -2,7 +2,7 @@
 
 This program implements Wisconsin Card Sorting (WCS) task in Java. 
 
-WCS is a common neuropsychological test. Essentially, it presents several cards (usually 4), one of which matches a certain -given- card, in terms of either color, number or shape. 
+WCS is a common neuropsychological test. Essentially, it presents several cards (usually 4), three of which match a certain -given- card, in terms of either color, number or shape, and the last one does not match in any way. 
 
 In our implementation, a single query card displayed at the bottom of the GUI, and four other cards, i.e. options, are depicted over it. Any of these cards involve a single sort of shape (oeither circle, triange, square or star), with a different number (1-4) and a different color (red, green, blue, or yellow).
 
