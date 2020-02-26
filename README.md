@@ -16,19 +16,33 @@ Here, we call the property to be matched  simply  as the 'rule' of the game.  In
 For determining the 'number of rounds of the current rule', we draw a random integer between 6 and 10. This means that any rule persists  at least 5 rounds and no more than 10 rounds. For choosing the rule, we draw a random integer between 1 and 3, where 'rule=1' means 'match color',  'rule=2' means 'match number', and 'rule=3' means 'match shape'.
 
 Upon quitting the game, a user log is saved in the current directory. There is a single line for each game (or each attempt) with 14 columns. The columns involve the following information
+
 01: Display time of the round in UNIX time stamp (msec)
+
 02: Answer time in UNIX time stamp (msec)
+
 03: Number of rounds for the current rule
+
 04: Rule in effect (1 for shape, 2 for color, 3 for number)
+
 05: 0 for fresh rule, 1 for continuing rule
+
 06: Code for option card no.1 (integer code representing shape-color-number)
+
 07: Code for option card no.2 (integer code representing shape-color-number)
+
 08: Code for option card no.3 (integer code representing shape-color-number)
+
 09: Code for option card no.4 (integer code representing shape-color-number)
+
 10: Code for query card (integer code representing shape-color-number)
+
 11: 0 for wrong answer, 1 for correct answer
+
 12: Code for answer chosen (integer code representing shape-color-number)
+
 13: Click location x-coordinate
+
 14: Click location y-coordinate
 
 
