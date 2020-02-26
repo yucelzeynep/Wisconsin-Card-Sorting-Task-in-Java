@@ -15,7 +15,7 @@ Here, we call the property to be matched  simply  as the 'rule' of the game.  In
 
 For determining the 'number of rounds of the current rule', we draw a random integer between 6 and 10. This means that any rule persists  at least 5 rounds and no more than 10 rounds. For choosing the rule, we draw a random integer between 1 and 3, where 'rule=1' means 'match color',  'rule=2' means 'match number', and 'rule=3' means 'match shape'.
 
-Upon quitting the game, a user log is saved in the current directory. There is a single line for each game (or each attempt) with 14 columns. The columns involve the following information
+Upon quitting the game, a user log is saved in the current directory. There is a single line for round of the game (or each attempt) with 14 columns. The columns involve the following information
 
 01: Display time of the round in UNIX time stamp (msec)
 
