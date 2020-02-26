@@ -28,7 +28,7 @@ import javax.swing.JPanel;
 
 public class WCSTgui extends JFrame{
 
-	public String outputFileName = "../2018_02_23_gokhan/2018_02_23_gokhan_mouse_input.txt";
+	public String outputFileName = "userlog.txt";
 
 
 	private JPanel panel,optionPanel,questionPanel,errorPanel;
