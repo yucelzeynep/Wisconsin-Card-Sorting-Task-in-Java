@@ -4,19 +4,19 @@ This program implements Wisconsin Card Sorting (WCS) task in Java.
 
 WCS is a common neuropsychological test. Essentially, it presents several cards (usually 4), three of which match a certain -given- card, in terms of either color, number or shape, and the last one does not match in any way. 
 
-In our implementation, a single query card displayed at the bottom of the GUI, and four other cards, i.e. options, are depicted over it. Any of these cards involve a single sort of shape (oeither circle, triange, square or star), with a different number (1-4) and a different color (red, green, blue, or yellow).
+In our implementation, a single query card is displayed at the bottom of the user interface, and four other cards, i.e. options, are depicted over it. Any of these cards involve a single sort of shape (either circle, triange, square or star), at a different number (1-4) and with a different color (either red, green, blue, or yellow).
 
-The game is based on the grounds of matching the query card to one of the options involving either the same shape, color, or number. Here, we call that property to be matched  simply  as the 'rule' of the game.  In addition,  a single set of cards (one query and four options) is termed as 'one round' of the game. 
+The game is based on the grounds of matching the query card to one of the options involving either the same shape, color, or number. Here, we call that property to be matched simply as the 'rule' of the game.  In addition, a single set of cards (one query and four options) is termed as 'one round' of the game. 
 
 The rule changes at random steps, i.e. after begin in effet for a random number of rounds. However, once it changes, the same rule persists for at least a minimum number rounds. The challenge of the game lies in the fact that there is no clue hinting the rule, or how long it will persist and the user needs to find it by trial and error. 
 
-For determining the 'number of rounds of the current rule', we draw a random integer between 6 and 10. This means that any rule persists for at least 5 rounds but no more than 10 rounds. For choosing the rule, we draw a random integer between 1 and 3, where 'rule=1' means 'match the color',  'rule=2' means 'match the number', and 'rule=3' means 'match the shape'.
+For determining the 'number of rounds of the current rule', we draw a random integer between 6 and 10. This means that any rule persists for at least 5 rounds but no more than 10 rounds. For choosing the rule, we draw a random integer between 1 and 3, where 'rule=1' means 'match the shape',  'rule=2' means 'match the color', and 'rule=3' means 'match the number'.
 
 Upon quitting the game, a user log is saved as txt file in the current directory. There is a single line for each round of the game (or each attempt) with 14 columns. The columns involve the following information
 
-01: Display time of the round in UNIX time stamp (msec)
+01: Time that the round starts (as UNIX time stamp in msec)
 
-02: Answer time in UNIX time stamp (msec)
+02: Time of answer (as UNIX time stamp in msec)
 
 03: Number of rounds for the current rule
 
