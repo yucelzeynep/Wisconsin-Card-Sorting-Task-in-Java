@@ -11,7 +11,7 @@ The cards are saved as jpg files under the image folder. Each image in he folder
 
 The game is based on the grounds of matching the query card to one of the options involving either the same shape, color, or number. Here, we call that property to be matched simply as the 'rule' of the game.  In addition, a single set of cards (one query and four options) is termed as 'one round' of the game. 
 
-The rule changes at random steps, i.e. after begin in effet for a random number of rounds. However, once it changes, the same rule persists for at least a minimum number rounds. The challenge of the game lies in the fact that there is no clue hinting the rule, or how long it will persist and the user needs to find it by trial and error. 
+The rule changes at random steps, i.e. after being in effect for a random number of rounds. However, once it changes, the same rule persists for at least a minimum number rounds. The challenge of the game lies in the fact that there is no clue hinting the rule, or how long it will persist and the user needs to find it by trial and error. 
 
 For determining the 'number of rounds of the current rule', we draw a random integer between 6 and 10. This means that any rule persists for at least 5 rounds but no more than 10 rounds. For choosing the rule, we draw a random integer between 1 and 3, where 'rule=1' means 'match the shape',  'rule=2' means 'match the color', and 'rule=3' means 'match the number'.
 
