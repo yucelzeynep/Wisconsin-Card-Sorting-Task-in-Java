@@ -6,8 +6,8 @@ WCS is a common neuropsychological test. Essentially, it presents several cards 
 
 In our implementation, a single query card is displayed at the bottom of the user interface, and four other cards, i.e. options, are depicted over it. Any of these cards involve a single sort of shape (either circle, triange, square or star), at a different number (1-4) and with a different color (either red, green, blue, or yellow).
 
-The cards are saved as jpg files under the image folder. Here image has a file name composed of a 3 character long integer string (e.g. 322.jpg, 411.jpg etc). Each digit represnets a different proporety of the card. Specifically, the first digit codes shape, the second digit codes color, and the last digit codes number. The codes for shape are 1 for circle, 
-2 for triangle, 3 for square and 4 for star. The color codes are 1 for red, 2 for green, 3 for blue and 4 for yellow. The number codes are directly the number of shapes on the cards. 
+The cards are saved as jpg files under the image folder. Each image in he folder has a file name composed of a 3 character long integer string (e.g. 322.jpg, 411.jpg etc). Each digit represents a different property of the cards. Specifically, the first digit codes shape, the second digit codes color, and the last digit codes number. The codes for shape are 1 for circle, 
+2 for triangle, 3 for square and 4 for star. The codes for color are 1 for red, 2 for green, 3 for blue and 4 for yellow. The number codes are directly the number of shapes on the cards. 
 
 The game is based on the grounds of matching the query card to one of the options involving either the same shape, color, or number. Here, we call that property to be matched simply as the 'rule' of the game.  In addition, a single set of cards (one query and four options) is termed as 'one round' of the game. 
 
