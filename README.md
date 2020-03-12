@@ -25,7 +25,7 @@ Upon quitting the game, a user log is saved as txt file in the current directory
 
 04: Rule in effect (1 for shape, 2 for color, 3 for number)
 
-05: 0 for fresh rule, 1 for continuing rule
+05: 1 for fresh rule, 0 for continuing rule
 
 06: Code for option card no.1 (integer code representing shape-color-number)
 
