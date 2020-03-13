@@ -4,7 +4,7 @@ This program implements Wisconsin Card Sorting (WCS) task in Java.
 
 WCS is a common neuropsychological test. Essentially, it presents several cards (usually 4), three of which match a certain -given- card, in terms of either color, number or shape, and the last one does not match in any way. 
 
-![wcst_gui](https://github.com/yucelzeynep/WCST/wcs_v2.png)
+![wcst_gui](https://github.com/yucelzeynep/WCST/blob/master/wcs_v2.png)
 
 In our implementation, a single query card is displayed at the bottom of the user interface, and four other cards, i.e. options, are depicted over it. Any of these cards involve a single sort of shape (either circle, triange, square or star), at a different number (1-4) and with a different color (either red, green, blue, or yellow).
 
