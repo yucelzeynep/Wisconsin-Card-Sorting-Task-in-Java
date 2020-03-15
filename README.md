@@ -48,5 +48,3 @@ Upon quitting the game, a user log is saved as txt file in the current directory
 13: Click location x-coordinate
 
 14: Click location y-coordinate
-
-
