@@ -28,7 +28,7 @@ import javax.swing.JPanel;
 
 public class WCSTgui extends JFrame{
 
-	public String outputFileName = "userlog.txt";
+	public String outputFileName = "../myoutput.txt";
 
 
 	private JPanel panel,optionPanel,questionPanel,errorPanel;
@@ -68,14 +68,14 @@ public class WCSTgui extends JFrame{
 		this.addWindowListener(new WindowAdapter(){
 			public void windowClosing(WindowEvent e){
 				//writeLogFile(finalResult);
-				appendLogFile(resultOfThisRound); // write the output of this round as soon as it is produced
+				appendLogFile(resultOfThisRound); // write the output of this round as far as it is produced
 				System.exit(0);
 			}
 		});
 		init();
 	}
 	public void init(){	
-		String path = "src/image";
+		String path = "../image";
 		File dir = new File(path);
 		File[] listOfFiles = dir.listFiles();
 		if(dir.isDirectory()){
@@ -168,7 +168,7 @@ public class WCSTgui extends JFrame{
 								nmaxgamesprev = nmaxgames;
 								while(nmaxgames == nmaxgamesprev)
 								{
-								nmaxgames = (int)(Math.random()*4)+6; // by Z, gives integers between 6 and 10
+								nmaxgames = (int)(Math.random()*4)+6; // by Z, gives numbers between 6 and 10
 								}
 
 							}
@@ -181,10 +181,12 @@ public class WCSTgui extends JFrame{
 								nmaxgamesprev = nmaxgames;
 								while(nmaxgames == nmaxgamesprev)
 								{
-								nmaxgames = (int)(Math.random()*4)+6; // by Z, gives integers between 6 and 10
+								nmaxgames = (int)(Math.random()*4)+6; // by Z, gives numbers between 6 and 10
 								}
 							}
-					
+							//System.out.println(startTime+" "+endTime+" "+newRule+" test before new random");
+							
+							//nmaxgames = (int)(Math.random()*4)+6; // by Z, gives numbers between 6 and 10
 
 							counter =0;
 							System.out.println(rule);
@@ -215,7 +217,7 @@ public class WCSTgui extends JFrame{
 							int newRule = randomRule();
 							if(newRule != rule){
 								rule = newRule;
-								nmaxgames = (int)(Math.random()*4)+6; // by Z, gives integers between 6 and 10
+								nmaxgames = (int)(Math.random()*4)+6; // by Z, gives numbers between 6 and 10
 
 							}
 							else{
@@ -224,7 +226,7 @@ public class WCSTgui extends JFrame{
 								}
 							}
 							rule = newRule;
-							nmaxgames = (int)(Math.random()*4)+6; // by Z, gives integers between 6 and 10
+							nmaxgames = (int)(Math.random()*4)+6; // by Z, gives numbers between 6 and 10
 
 							counter =0;
 							System.out.println(rule);
