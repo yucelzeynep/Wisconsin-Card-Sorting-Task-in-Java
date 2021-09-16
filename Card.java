@@ -1,3 +1,4 @@
+import java.awt.Dimension;
 import java.awt.Image;
 
 import javax.swing.ImageIcon;
@@ -11,13 +12,17 @@ public class Card {
 	private String number;
 	private ImageIcon image;
 	
-	public Card(String fileName,String path){
+	public Card(String fileName,String path,Dimension panelScreenSize){
 		String str = fileName.substring(0, 3);
+		int cardWidth = panelScreenSize.width / 8 ;
+		int cardHeight = panelScreenSize.height / 4 ;
 		this.name = str;
 
 		ImageIcon icon = new ImageIcon(path);
 		Image img = icon.getImage();
-		Image newImg = img.getScaledInstance(300, 400, java.awt.Image.SCALE_SMOOTH);
+		System.out.println(cardWidth);
+		System.out.println(cardHeight);
+		Image newImg = img.getScaledInstance(cardWidth ,cardHeight, java.awt.Image.SCALE_SMOOTH);
 		image = new ImageIcon(newImg);
 	}
 	public String getName() {
