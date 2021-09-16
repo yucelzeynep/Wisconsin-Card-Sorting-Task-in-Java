@@ -75,7 +75,7 @@ public class WCSTgui extends JFrame{
 		init();
 	}
 	public void init(){	
-		String path = "../image";
+		String path = "image";
 		File dir = new File(path);
 		File[] listOfFiles = dir.listFiles();
 		if(dir.isDirectory()){
